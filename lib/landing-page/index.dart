@@ -81,6 +81,7 @@ class _IndexPageState extends State<IndexPage> {
       appBar: MediaQuery.of(context).size.width > 760
           ? _appBarTabDesktop()
           : AppBar(
+              iconTheme: IconThemeData(color: Colors.white),
               backgroundColor: Colors.transparent,
               elevation: 0.0,
             ),
@@ -196,8 +197,12 @@ class _IndexPageState extends State<IndexPage> {
           children: [
             Center(
               child: NavBarLogo(
-                height: 28,
+                height: 25,
               ),
+            ),
+            Divider(
+              color: Colors.white,
+              height: 30.0,
             ),
             for (int i = 0; i < _sectionsName.length; i++)
               _appBarActions(_sectionsName[i], i, _sectionsIcons[i]),
@@ -206,17 +211,14 @@ class _IndexPageState extends State<IndexPage> {
               child: MaterialButton(
                 hoverColor: kPrimaryColor.withAlpha(150),
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5.0),
+                    borderRadius: BorderRadius.circular(10.0),
                     side: BorderSide(color: kPrimaryColor)),
                 onPressed: () {
                   launchURL(
                       "https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE");
                 },
                 child: ListTile(
-                  leading: Icon(
-                    Icons.book,
-                    color: Colors.green,
-                  ),
+                  leading: Icon(Icons.book, color: Color(0xff4dff14)),
                   title: Text(
                     "Resume",
                     style: GoogleFonts.montserrat(

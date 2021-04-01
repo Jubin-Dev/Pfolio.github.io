@@ -18,7 +18,7 @@ class PortfolioMobileTab extends StatelessWidget {
             style: GoogleFonts.montserrat(
               fontSize: height * 0.06,
               fontWeight: FontWeight.w100,
-              letterSpacing: 1.0,
+              letterSpacing: 1.5,
             ),
           ),
           Text(
@@ -57,7 +57,7 @@ class PortfolioMobileTab extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5.0),
                 side: BorderSide(color: kPrimaryColor)),
             onPressed: () {
-              launchURL("https://github.com/m-hamzashakeel");
+              launchURL("https://github.com/Jubin-Dev");
             },
             child: Text(
               "See More",

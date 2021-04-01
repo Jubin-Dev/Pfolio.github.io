@@ -57,7 +57,7 @@ class _HomeMobileState extends State<HomeMobile> {
                   style: GoogleFonts.montserrat(
                       fontSize: height * 0.055,
                       fontWeight: FontWeight.w100,
-                      letterSpacing: 1.10),
+                      letterSpacing: 15),
                 ),
                 Row(
                   children: [
@@ -73,7 +73,7 @@ class _HomeMobileState extends State<HomeMobile> {
                           color: Color(0xff4dff14),
                           fontSize:
                               width < 1200 ? height * 0.055 : height * 0.095,
-                          fontWeight: FontWeight.w800,
+                          fontWeight: FontWeight.w900,
                           letterSpacing: 4.0),
                     ),
                   ],

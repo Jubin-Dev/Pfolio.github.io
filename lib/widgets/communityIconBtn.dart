@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:jcsfolio/widgets/constants.dart';
 
-
 class CommunityIconBtn extends StatelessWidget {
   final String icon;
   final String link;
@@ -11,7 +10,7 @@ class CommunityIconBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 12.0),
+      padding: EdgeInsets.symmetric(horizontal: 10.0),
       child: InkWell(
         child: Image.asset(
           icon,

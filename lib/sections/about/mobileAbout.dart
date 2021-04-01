@@ -33,7 +33,7 @@ class AboutMobile extends StatelessWidget {
           ),
           AboutMeText(
             textAlign: TextAlign.center,
-            fontSize: 13,
+            fontSize: 15,
           ),
           SizedBox(
             height: height * 0.03,
@@ -49,12 +49,13 @@ class AboutMobile extends StatelessWidget {
                 ),
             ],
           ),
-          SizedBox(
-            height: height * 0.025,
+          Divider(
+            height: height * 0.028,
+            color: Colors.white,
           ),
           ToolsTech(),
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               NavBarLogo(
                 height: height * 0.04,

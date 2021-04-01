@@ -76,7 +76,7 @@ class _ProjectCardState extends State<ProjectCard> {
                 widget.projectIcon != null
                     ? Image.asset(
                         widget.projectIcon,
-                        height: height * 0.1,
+                        height: height * 0.05,
                       )
                     : Container(),
                 widget.projectIconData != null
