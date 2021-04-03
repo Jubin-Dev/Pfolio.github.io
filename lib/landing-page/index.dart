@@ -23,7 +23,6 @@ class _IndexPageState extends State<IndexPage> {
       ScrollController(initialScrollOffset: 25.0);
   ItemScrollController _itemScrollController = ItemScrollController();
   ItemPositionsListener _itemPositionListener = ItemPositionsListener.create();
-
   final List<String> _sectionsName = [
     "Home",
     "About",
