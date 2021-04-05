@@ -1,3 +1,4 @@
+import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:jcsfolio/animations/entranceFader.dart';
@@ -183,6 +184,20 @@ class _IndexPageState extends State<IndexPage> {
             ),
           ),
         ),
+        EntranceFader(
+            offset: Offset(0, -20),
+            delay: Duration(seconds: 3),
+            duration: Duration(seconds: 1),
+            child: IconButton(
+              onPressed: () {
+                AdaptiveTheme.of(context).toggleThemeMode();
+              },
+              icon: Icon(
+                Icons.brightness_3,
+                size: 25,
+                color: Colors.white,
+              ),
+            ))
       ],
     );
   }
@@ -194,6 +209,17 @@ class _IndexPageState extends State<IndexPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            IconButton(
+              alignment: Alignment.topRight,
+              onPressed: () {
+                AdaptiveTheme.of(context).toggleThemeMode();
+              },
+              icon: Icon(
+                Icons.brightness_3,
+                size: 25,
+                color: Colors.white,
+              ),
+            ),
             Center(
               child: NavBarLogo(
                 height: 25,

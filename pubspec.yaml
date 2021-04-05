@@ -34,6 +34,7 @@ dependencies:
   universal_html: ^2.0.4 
   shared_preferences: ^2.0.5 
   provider: ^5.0.0
+  adaptive_theme: ^2.1.0
 
  
   
